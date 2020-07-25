@@ -1,0 +1,89 @@
+
+<html>
+<head>
+    <style>
+        *,
+        *:before,
+        *:after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .popup-body{
+            padding: 10px;
+        }
+
+        .popup-input{
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            border:1px solid #ccc;
+            width: 320px;
+            margin-bottom: 10px;
+        }
+
+        .popup-input:focus::placeholder{
+            opacity: 0;
+        }
+
+        .popup-btn{
+            padding: 15px;
+            color:#fff;
+            width: 320px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            background:#40c8c4;
+            cursor: pointer;
+        }
+
+        .buttons{
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .buttons > *:last-child{
+            margin-left: 10px;
+        }
+
+        .buttons > *{
+            padding: 15px;
+            color:#fff;
+            border-radius: 5px;
+            flex:1;
+            background:#40c8c4;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .btn{
+            transition: .2s;
+        }
+
+        .btn:hover{
+            background: #39b3ae;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup-body">
+        <input type="text" autofocus class="popup-input" placeholder="Text...">
+        <div class="btn popup-btn">Find </div>
+        <div class="buttons">
+            <div class="btn img-btn">
+                Pretty Image
+            </div>
+            <div class="btn text-btn">
+                Pretty Text
+            </div>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
